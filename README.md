@@ -12,5 +12,5 @@ For example (From ``~/hyprland-config/desktop`` to ``~/.config``):
 
 Alterntatively, you could also do this graphically with your favourite file manager.  
 
-# Current config on framework laptop  
+# Current config on Framework Laptop 13  
 ![image](https://github.com/user-attachments/assets/8bb41e30-d64e-46db-83e5-f2569d1d8e9e)
