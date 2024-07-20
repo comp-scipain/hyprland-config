@@ -3,14 +3,14 @@
 
 (AUR) Packages used: ```hyprpicker hyprshot pamac-all wlogout syncthing-gtk```  
 
-## How to apply my config (If you want to replecate my set up for some reason)
+## How to apply my config (If you want to replicate my set up for some reason)
 You could copy or move the files from the repo to your ``~/.config``  
 
 For example (From ``~/hyprland-config/desktop`` to ``~/.config``):  
 
 ``cp -r ~/hyprland-config/desktop ~/.config``  or ``mv ~/hyprland-config/desktop ~/.config``  
 
-Alterntatively, you could also do this graphically with your favourite file manager.  
+Alternatively, you could also do this graphically with your favorite file manager.  
 
 # Current config on Framework Laptop 13  
 ![image](https://github.com/user-attachments/assets/8bb41e30-d64e-46db-83e5-f2569d1d8e9e)
