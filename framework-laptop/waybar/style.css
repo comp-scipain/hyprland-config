@@ -151,11 +151,13 @@ workspaces {
 
 #clock {
     background-color: #64727D;
+    border-radius: 10px;
 }
 
 #battery {
     background-color: #ffffff;
     color: #000000;
+    border-radius: 10px;
 }
 
 #battery.charging, #battery.plugged {
@@ -183,6 +185,7 @@ workspaces {
 
 #power-profiles-daemon {
     padding-right: 15px;
+    border-radius: 10px;
 }
 
 #power-profiles-daemon.performance {
@@ -205,24 +208,32 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
+    background-color: #ffffff;
     color: #000000;
+    border-radius: 10px;
 }
 
 #memory {
-    background-color: #9b59b6;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
 }
 
 #disk {
-    background-color: #964B00;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
 }
 
 #backlight {
     background-color: #90b1b1;
+    border-radius: 10px;
 }
 
 #network {
-    background-color: #2980b9;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
 }
 
 #network.disconnected {
@@ -230,8 +241,9 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
+    background-color: #ffffff;
     color: #000000;
+    border-radius: 10px;
 }
 
 #pulseaudio.muted {
@@ -263,7 +275,9 @@ label:focus {
 }
 
 #temperature {
-    background-color: #f0932b;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
 }
 
 #temperature.critical {
