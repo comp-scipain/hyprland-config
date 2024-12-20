@@ -1,6 +1,6 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
+    "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 30, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
@@ -13,6 +13,7 @@
         "cpu",
         "memory",
         "temperature",
+        "network#speed",
         "custom/media"
     ],
     "modules-center": [
@@ -27,10 +28,8 @@
         "power-profiles-daemon",
         "keyboard-state",
         "sway/language",
-        "battery",
-        "battery#bat2",
         "tray",
-	"custom/power"
+	    "custom/power"
     ],
     // Modules configuration
     // "sway/workspaces": {
@@ -175,9 +174,15 @@
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
+    "network#speed":{
+        "format": "{bandwidthUpBits} Up | {bandwidthDownBits} Down",
+        "format-disconnected": "Disconnected ⚠",
+        "tooltip-format-disconnected": "Disconnected",
+        "interval": 1
+    },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
+        "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",

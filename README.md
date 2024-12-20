@@ -2,7 +2,7 @@
 **Note to anyone who somehow ended up here: Since I am currently not using hyprland on my desktop the desktop config in this repo may or may not work**  
 
 ## Packages that provide functionality
-```hyprland waybar wofi kitty polkit-gnome polkit-kde-agent cliphist pamixer xdg-desktop-portal-hyprland pavucontrol swaync network-manager-applet hyprshot wlogout hyprlock hypridle``` (Installed using pacman)
+```hyprland waybar wofi kitty polkit-gnome polkit-kde-agent cliphist pamixer xdg-desktop-portal-hyprland pavucontrol swaync network-manager-applet hyprshot wlogout hyprlock hypridle power-profiles-daemon``` (Installed using pacman)
 
 ## Fonts (Note: Some of these fonts are required for icons to show up in waybar)
 ```otf-font-awesome ttf-meslo-nerd```
