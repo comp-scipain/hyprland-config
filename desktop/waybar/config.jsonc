@@ -10,10 +10,14 @@
         "hyprland/workspaces",
         "sway/mode",
         "sway/scratchpad",
+        "cpu",
+        "memory",
+        "temperature",
         "custom/media"
     ],
     "modules-center": [
-        "hyprland/window"
+        "hyprland/window",
+        "clock"
     ],
     "modules-right": [
         "mpd",
@@ -21,15 +25,10 @@
         "pulseaudio",
         "network",
         "power-profiles-daemon",
-        "cpu",
-        "memory",
-        "temperature",
-        "backlight",
         "keyboard-state",
         "sway/language",
         "battery",
         "battery#bat2",
-        "clock",
         "tray",
 	"custom/power"
     ],
@@ -58,6 +57,10 @@
             "locked": "",
             "unlocked": ""
         }
+    },
+    "hyprland/window": {
+        "format": "{title}",
+        "icon": true
     },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
@@ -108,27 +111,29 @@
     },
     "clock": {
         // "timezone": "America/New_York",
+        "interval": 1,
+	    "format": "{:%a %b %d %I:%M:%S %p}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
         "format": "{usage}% ",
         "tooltip": true,
-	"interval": 1
+	    "interval": 1
     },
     "memory": {
         "format": "{}% "
     },
     "temperature": {
-        // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "thermal-zone": 2,
+        "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input", //this is where my CPUs temp sensor is
         "critical-threshold": 80,
-        // "format-critical": "{temperatureC}°C {icon}",
+        "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
     },
     "backlight": {
-        // "device": "acpi_video1",
+        "device": "acpi_video1",
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
