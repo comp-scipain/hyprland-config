@@ -8,7 +8,7 @@
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
-        "sway/mode",
+        //"sway/mode",
         "sway/scratchpad",
         "cpu",
         "memory",
@@ -151,9 +151,9 @@
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
-    "battery#bat2": {
-        "bat": "BAT2"
-    },
+    // "battery#bat2": {
+    //     "bat": "BAT2"
+    // },
     "power-profiles-daemon": {
       "format": "{icon}",
       "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
