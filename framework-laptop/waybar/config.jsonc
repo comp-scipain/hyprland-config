@@ -123,7 +123,7 @@
         "tooltip": true
     },
     "memory": {
-        "format": "{}% "
+        "format": "{used:0.1f} GB / {total:0.1f} GB "
     },
     "disk":{
         "interval": 1,
